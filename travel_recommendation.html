@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Recommendation</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <div id="navBar">
+      <div id="titleLogoDiv">
+        <i class="fa fa-plane" id="planIcon"></i>
+        <h1>Travel Recommendation</h1>
+      </div>
+      <nav>
+        <ul id="navLinks">
+          <li><a class="links" href="travel_recommendation.html">Home</a></li>
+          <li><a class="links" href="aboutUs.html">About Us</a></li>
+          <li><a class="links" href="contactUs.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div id="searchDiv">
+        <input
+          id="searchInput"
+          type="text"
+          placeholder="Enter Destination or keyword"
+        />
+        <i class="fa fa-search" id="searchIcon"></i>
+        <button class="searchButtons" id="searchBtn">Search</button>
+        <button class="searchButtons" id="clearBtn">Clear</button>
+      </div>
+    </div>
+    <!-- Main Screen -->
+    <div id="mainScreen">
+      <img
+        src="assets/Background.jpg"
+        alt="BackgroundImage"
+        id="backgroundImg"
+      />
+      <div id="mainScreenItemsDiv">
+        <div id="mainScreenSocial">
+          <i class="fa fa-twitter" id="social"></i>
+          <i class="fa fa-facebook" id="social"></i>
+          <i class="fa fa-instagram" id="social"></i>
+          <i class="fa fa-youtube-play" id="social"></i>
+        </div>
+        <div id="mainScreenTextDiv">
+          <h1 id="homeText">Explore Dream <br />Destination</h1>
+          <p style="color: white; font-family: Arial, Helvetica, sans-serif">
+            The Travel Recommendation App Helps user explore popular travel
+            destinations <br />though an interactive and user friendly
+            interface. It allows users to search for<br />beaches, temples,
+            countries, or specific country names to view related cities along<br />with
+            images and descriptions. The app dynamically fetches data from a
+            structured<br />JSON file to display relevant results. It provides a
+            simple and efficient way to<br />discover and plan travel
+            destinations.
+          </p>
+          <button id="bookingBtn">Book Now</button>
+        </div>
+        <div id="result"></div>
+      </div>
+      
+    </div>
+
+    <script src="travel_recommendation.js"></script>
+  </body>
+</html>
